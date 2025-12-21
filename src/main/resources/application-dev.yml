@@ -1,0 +1,20 @@
+spring:
+  #DATABASE
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dvdrental
+    #url: jdbc:postgresql://116.203.237.174:5432/dvdrental
+    username: unameconnection
+    password: 'conGG54ed$'
+    driver-class-name: org.postgresql.Driver
+  #JPA
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  # BIG DECIMAL
+  jackson:
+    generator:
+      write-bigdecimal-as-plain: true
