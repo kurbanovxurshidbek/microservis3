@@ -6,6 +6,8 @@ spring:
     username: unameconnection
     password: 'conGG54ed$'
     driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 9    # <-- MAX connection
   #JPA
   jpa:
     hibernate:
